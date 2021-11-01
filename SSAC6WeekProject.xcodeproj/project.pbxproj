@@ -13,6 +13,25 @@
 		F48A2B3F272FBC340015FDDF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F48A2B3D272FBC340015FDDF /* Main.storyboard */; };
 		F48A2B41272FBC360015FDDF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F48A2B40272FBC360015FDDF /* Assets.xcassets */; };
 		F48A2B44272FBC360015FDDF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F48A2B42272FBC360015FDDF /* LaunchScreen.storyboard */; };
+		F48A2B4C272FBC510015FDDF /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F48A2B4B272FBC510015FDDF /* Home.storyboard */; };
+		F48A2B4E272FBC600015FDDF /* Content.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F48A2B4D272FBC600015FDDF /* Content.storyboard */; };
+		F48A2B50272FBC6E0015FDDF /* Calendar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F48A2B4F272FBC6E0015FDDF /* Calendar.storyboard */; };
+		F48A2B52272FBC780015FDDF /* Search.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F48A2B51272FBC780015FDDF /* Search.storyboard */; };
+		F48A2B54272FBC860015FDDF /* Setting.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F48A2B53272FBC860015FDDF /* Setting.storyboard */; };
+		F48A2B56272FC5B30015FDDF /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48A2B55272FC5B30015FDDF /* HomeViewController.swift */; };
+		F48A2B58272FC5F20015FDDF /* AddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48A2B57272FC5F20015FDDF /* AddViewController.swift */; };
+		F48A2B5A272FC6260015FDDF /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48A2B59272FC6260015FDDF /* SearchViewController.swift */; };
+		F48A2B5D272FCCB30015FDDF /* SearchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48A2B5B272FCCB30015FDDF /* SearchTableViewCell.swift */; };
+		F48A2B5E272FCCB30015FDDF /* SearchTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F48A2B5C272FCCB30015FDDF /* SearchTableViewCell.xib */; };
+		F48A2B61272FE0760015FDDF /* RIDIBatang.otf in Resources */ = {isa = PBXBuildFile; fileRef = F48A2B60272FE0760015FDDF /* RIDIBatang.otf */; };
+		F48A2B64272FE0CE0015FDDF /* UIFont+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48A2B63272FE0CE0015FDDF /* UIFont+Extension.swift */; };
+		F48A2B6B272FEB180015FDDF /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = F48A2B6D272FEB180015FDDF /* Localizable.strings */; };
+		F48A2B70272FEF880015FDDF /* GuriDiary.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F48A2B6F272FEF880015FDDF /* GuriDiary.ttf */; };
+		F48A2B72273017F10015FDDF /* LocalizableStrings.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48A2B71273017F10015FDDF /* LocalizableStrings.swift */; };
+		F48A2B74273018300015FDDF /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48A2B73273018300015FDDF /* String+Extension.swift */; };
+		F48A2B77273018EF0015FDDF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F48A2B79273018EF0015FDDF /* InfoPlist.strings */; };
+		F48A2B7E273020260015FDDF /* CarlendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48A2B7D273020260015FDDF /* CarlendarViewController.swift */; };
+		F48A2B802730226E0015FDDF /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48A2B7F2730226E0015FDDF /* SettingViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +43,29 @@
 		F48A2B40272FBC360015FDDF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F48A2B43272FBC360015FDDF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F48A2B45272FBC360015FDDF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F48A2B4B272FBC510015FDDF /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
+		F48A2B4D272FBC600015FDDF /* Content.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Content.storyboard; sourceTree = "<group>"; };
+		F48A2B4F272FBC6E0015FDDF /* Calendar.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Calendar.storyboard; sourceTree = "<group>"; };
+		F48A2B51272FBC780015FDDF /* Search.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Search.storyboard; sourceTree = "<group>"; };
+		F48A2B53272FBC860015FDDF /* Setting.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Setting.storyboard; sourceTree = "<group>"; };
+		F48A2B55272FC5B30015FDDF /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		F48A2B57272FC5F20015FDDF /* AddViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddViewController.swift; sourceTree = "<group>"; };
+		F48A2B59272FC6260015FDDF /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		F48A2B5B272FCCB30015FDDF /* SearchTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTableViewCell.swift; sourceTree = "<group>"; };
+		F48A2B5C272FCCB30015FDDF /* SearchTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchTableViewCell.xib; sourceTree = "<group>"; };
+		F48A2B60272FE0760015FDDF /* RIDIBatang.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = RIDIBatang.otf; sourceTree = "<group>"; };
+		F48A2B63272FE0CE0015FDDF /* UIFont+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+Extension.swift"; sourceTree = "<group>"; };
+		F48A2B67272FE3440015FDDF /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/Main.strings; sourceTree = "<group>"; };
+		F48A2B68272FE3440015FDDF /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		F48A2B6C272FEB180015FDDF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		F48A2B6E272FEB1A0015FDDF /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/Localizable.strings; sourceTree = "<group>"; };
+		F48A2B6F272FEF880015FDDF /* GuriDiary.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = GuriDiary.ttf; sourceTree = "<group>"; };
+		F48A2B71273017F10015FDDF /* LocalizableStrings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizableStrings.swift; sourceTree = "<group>"; };
+		F48A2B73273018300015FDDF /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
+		F48A2B78273018EF0015FDDF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		F48A2B7A273018F10015FDDF /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		F48A2B7D273020260015FDDF /* CarlendarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarlendarViewController.swift; sourceTree = "<group>"; };
+		F48A2B7F2730226E0015FDDF /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,11 +102,54 @@
 				F48A2B39272FBC340015FDDF /* SceneDelegate.swift */,
 				F48A2B3B272FBC340015FDDF /* ViewController.swift */,
 				F48A2B3D272FBC340015FDDF /* Main.storyboard */,
-				F48A2B40272FBC360015FDDF /* Assets.xcassets */,
+				F48A2B4B272FBC510015FDDF /* Home.storyboard */,
+				F48A2B55272FC5B30015FDDF /* HomeViewController.swift */,
+				F48A2B4D272FBC600015FDDF /* Content.storyboard */,
+				F48A2B57272FC5F20015FDDF /* AddViewController.swift */,
+				F48A2B4F272FBC6E0015FDDF /* Calendar.storyboard */,
+				F48A2B7D273020260015FDDF /* CarlendarViewController.swift */,
+				F48A2B5C272FCCB30015FDDF /* SearchTableViewCell.xib */,
+				F48A2B5B272FCCB30015FDDF /* SearchTableViewCell.swift */,
+				F48A2B51272FBC780015FDDF /* Search.storyboard */,
+				F48A2B59272FC6260015FDDF /* SearchViewController.swift */,
+				F48A2B53272FBC860015FDDF /* Setting.storyboard */,
+				F48A2B7F2730226E0015FDDF /* SettingViewController.swift */,
 				F48A2B42272FBC360015FDDF /* LaunchScreen.storyboard */,
+				F48A2B71273017F10015FDDF /* LocalizableStrings.swift */,
+				F48A2B40272FBC360015FDDF /* Assets.xcassets */,
 				F48A2B45272FBC360015FDDF /* Info.plist */,
+				F48A2B66272FE2F40015FDDF /* Localization */,
+				F48A2B62272FE0A40015FDDF /* Extension */,
+				F48A2B5F272FDFDB0015FDDF /* Resource */,
 			);
 			path = SSAC6WeekProject;
+			sourceTree = "<group>";
+		};
+		F48A2B5F272FDFDB0015FDDF /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				F48A2B60272FE0760015FDDF /* RIDIBatang.otf */,
+				F48A2B6F272FEF880015FDDF /* GuriDiary.ttf */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		F48A2B62272FE0A40015FDDF /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				F48A2B63272FE0CE0015FDDF /* UIFont+Extension.swift */,
+				F48A2B73273018300015FDDF /* String+Extension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		F48A2B66272FE2F40015FDDF /* Localization */ = {
+			isa = PBXGroup;
+			children = (
+				F48A2B6D272FEB180015FDDF /* Localizable.strings */,
+				F48A2B79273018EF0015FDDF /* InfoPlist.strings */,
+			);
+			path = Localization;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -109,6 +194,7 @@
 			knownRegions = (
 				en,
 				Base,
+				ko,
 			);
 			mainGroup = F48A2B2B272FBC340015FDDF;
 			productRefGroup = F48A2B35272FBC340015FDDF /* Products */;
@@ -125,9 +211,19 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F48A2B50272FBC6E0015FDDF /* Calendar.storyboard in Resources */,
+				F48A2B70272FEF880015FDDF /* GuriDiary.ttf in Resources */,
 				F48A2B44272FBC360015FDDF /* LaunchScreen.storyboard in Resources */,
+				F48A2B77273018EF0015FDDF /* InfoPlist.strings in Resources */,
+				F48A2B6B272FEB180015FDDF /* Localizable.strings in Resources */,
+				F48A2B5E272FCCB30015FDDF /* SearchTableViewCell.xib in Resources */,
 				F48A2B41272FBC360015FDDF /* Assets.xcassets in Resources */,
 				F48A2B3F272FBC340015FDDF /* Main.storyboard in Resources */,
+				F48A2B52272FBC780015FDDF /* Search.storyboard in Resources */,
+				F48A2B4C272FBC510015FDDF /* Home.storyboard in Resources */,
+				F48A2B4E272FBC600015FDDF /* Content.storyboard in Resources */,
+				F48A2B61272FE0760015FDDF /* RIDIBatang.otf in Resources */,
+				F48A2B54272FBC860015FDDF /* Setting.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,9 +234,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F48A2B5A272FC6260015FDDF /* SearchViewController.swift in Sources */,
+				F48A2B7E273020260015FDDF /* CarlendarViewController.swift in Sources */,
+				F48A2B58272FC5F20015FDDF /* AddViewController.swift in Sources */,
 				F48A2B3C272FBC340015FDDF /* ViewController.swift in Sources */,
 				F48A2B38272FBC340015FDDF /* AppDelegate.swift in Sources */,
+				F48A2B72273017F10015FDDF /* LocalizableStrings.swift in Sources */,
 				F48A2B3A272FBC340015FDDF /* SceneDelegate.swift in Sources */,
+				F48A2B56272FC5B30015FDDF /* HomeViewController.swift in Sources */,
+				F48A2B64272FE0CE0015FDDF /* UIFont+Extension.swift in Sources */,
+				F48A2B74273018300015FDDF /* String+Extension.swift in Sources */,
+				F48A2B5D272FCCB30015FDDF /* SearchTableViewCell.swift in Sources */,
+				F48A2B802730226E0015FDDF /* SettingViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -151,6 +256,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				F48A2B3E272FBC340015FDDF /* Base */,
+				F48A2B67272FE3440015FDDF /* ko */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -159,8 +265,27 @@
 			isa = PBXVariantGroup;
 			children = (
 				F48A2B43272FBC360015FDDF /* Base */,
+				F48A2B68272FE3440015FDDF /* ko */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		F48A2B6D272FEB180015FDDF /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F48A2B6C272FEB180015FDDF /* en */,
+				F48A2B6E272FEB1A0015FDDF /* ko */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		F48A2B79273018EF0015FDDF /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F48A2B78273018EF0015FDDF /* en */,
+				F48A2B7A273018F10015FDDF /* ko */,
+			);
+			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -170,6 +295,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
@@ -231,6 +357,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
@@ -295,6 +422,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -306,7 +434,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -323,6 +451,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -334,7 +463,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  SettingViewController.swift
 //  SSAC6WeekProject
 //
 //  Created by Sang hun Lee on 2021/11/01.
@@ -7,17 +7,12 @@
 
 import UIKit
 
-class ViewController: UIViewController {
-    
+class SettingViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.tabBarController?.tabBar.items![0].title = "김"
-        
+        navigationItem.title = LocalizableStrings.setting_title.localized
     }
+    
+
 }
-
-
-
-
-
