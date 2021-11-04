@@ -20,17 +20,18 @@ class HomeViewController: UIViewController {
             tabBarItems[1].title = LocalizableStrings.tabbar_calendar.localized
             tabBarItems[2].title = LocalizableStrings.tabbar_search.localized
             tabBarItems[3].title = LocalizableStrings.tabbar_setting.localized
+            tabBarItems[0].image = UIImage(systemName: "house")
+            tabBarItems[1].image = UIImage(systemName: "calendar")
+            tabBarItems[2].image = UIImage(systemName: "magnifyingglass")
+            tabBarItems[3].image = UIImage(systemName: "gearshape.fill")
         }
-            
-        self.tabBarController?.tabBar.items![0].image = UIImage(systemName: "house")
-        self.tabBarController?.tabBar.items![1].image = UIImage(systemName: "calendar")
-        self.tabBarController?.tabBar.items![2].image = UIImage(systemName: "magnifyingglass")
-        self.tabBarController?.tabBar.items![3].image = UIImage(systemName: "gearshape.fill")
         
     }
     
     @objc func addBtnClicked() {
+        // 1. 어떤 스토리 보드
         let storyboard = UIStoryboard(name: "Content", bundle: nil)
+        // 2. 어떤 VC
         let vc = storyboard.instantiateViewController(withIdentifier: "AddViewController") as! AddViewController
         let nav =  UINavigationController(rootViewController: vc)
         nav.modalTransitionStyle = .coverVertical
