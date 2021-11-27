@@ -19,6 +19,7 @@ class UserDiary: Object {
     @Persisted var writeDate = Date()
     @Persisted var regDate = Date()
     @Persisted var favorite: Bool
+    // 4. [To-Do] 이미지 포함 여부를 알 수 있는 col 작성
 
     convenience init(diaryTitle: String, diaryContent: String?, writeDate: Date, regDate: Date) {
         self.init()

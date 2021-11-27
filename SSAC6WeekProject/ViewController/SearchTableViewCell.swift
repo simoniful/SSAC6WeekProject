@@ -15,6 +15,14 @@ class SearchTableViewCell: UITableViewCell {
     @IBOutlet weak var diaryMainLabel: UILabel!
     @IBOutlet weak var diaryImage: UIImageView!
     
+    func configureCell(row: UserDiary) {
+        diaryTitleLabel.text = row.diaryTitle
+        diaryMainLabel.text = row.diaryContent
+        let format = DateFormatter()
+        format.dateFormat = "yyyy년 MM월 dd일"
+        writingDateLabel.text = format.string(from: row.writeDate)
+    }
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -22,7 +30,6 @@ class SearchTableViewCell: UITableViewCell {
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-
         // Configure the view for the selected state
     }
     

@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="4hc-mM-Ku0">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="4hc-mM-Ku0">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -32,26 +32,34 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="photo.artframe" catalog="system" title=""/>
                                 <connections>
-                                    <action selector="photoBtnClicked:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="aAL-cC-FsW"/>
+                                    <action selector="selectImageBtnClicked:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="rpK-VJ-NN7"/>
                                 </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="bottom" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="rLU-2a-7WK">
                                 <rect key="frame" x="20" y="522" width="374" height="340"/>
                                 <subviews>
-                                    <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" style="compact" translatesAutoresizingMaskIntoConstraints="NO" id="kN9-Vd-iGE">
-                                        <rect key="frame" x="0.0" y="0.0" width="374" height="50"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ueR-TI-d2b">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="44"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="50" id="Rf4-4w-RDi"/>
+                                            <constraint firstAttribute="height" constant="44" id="Ctj-yh-FPT"/>
                                         </constraints>
-                                    </datePicker>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="square.and.arrow.up" catalog="system" title="Button"/>
+                                        <connections>
+                                            <action selector="dateBtnClicked:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="z98-qd-hbU"/>
+                                        </connections>
+                                    </button>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="일기 제목" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CVR-rJ-2R3">
-                                        <rect key="frame" x="0.0" y="58" width="374" height="40"/>
+                                        <rect key="frame" x="0.0" y="52" width="374" height="44"/>
                                         <color key="backgroundColor" systemColor="systemGray6Color"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="44" id="cl1-AJ-Y8R"/>
+                                        </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="일기 내용" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="abU-YX-qqV">
-                                        <rect key="frame" x="0.0" y="106" width="374" height="234"/>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" verticalHuggingPriority="249" text="일기 내용" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="abU-YX-qqV">
+                                        <rect key="frame" x="0.0" y="104" width="374" height="236"/>
                                         <color key="backgroundColor" systemColor="systemGray6Color"/>
                                         <color key="textColor" systemColor="labelColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -59,14 +67,14 @@
                                     </textView>
                                 </subviews>
                                 <constraints>
+                                    <constraint firstItem="ueR-TI-d2b" firstAttribute="leading" secondItem="rLU-2a-7WK" secondAttribute="leading" id="5W4-f9-MXH"/>
+                                    <constraint firstAttribute="trailing" secondItem="ueR-TI-d2b" secondAttribute="trailing" id="62U-wM-dK6"/>
                                     <constraint firstItem="abU-YX-qqV" firstAttribute="leading" secondItem="rLU-2a-7WK" secondAttribute="leading" id="ZOG-gt-Tmc"/>
                                     <constraint firstAttribute="trailing" secondItem="abU-YX-qqV" secondAttribute="trailing" id="bLf-Px-KY6"/>
                                     <constraint firstAttribute="bottom" secondItem="abU-YX-qqV" secondAttribute="bottom" id="hcM-5l-tUt"/>
-                                    <constraint firstItem="kN9-Vd-iGE" firstAttribute="leading" secondItem="rLU-2a-7WK" secondAttribute="leading" id="j6P-Pm-dfb"/>
                                     <constraint firstItem="CVR-rJ-2R3" firstAttribute="leading" secondItem="rLU-2a-7WK" secondAttribute="leading" id="jbB-vA-5D8"/>
                                     <constraint firstAttribute="trailing" secondItem="CVR-rJ-2R3" secondAttribute="trailing" id="pRr-Pp-q2O"/>
-                                    <constraint firstItem="kN9-Vd-iGE" firstAttribute="top" secondItem="rLU-2a-7WK" secondAttribute="top" id="pVd-ER-zWd"/>
-                                    <constraint firstAttribute="trailing" secondItem="kN9-Vd-iGE" secondAttribute="trailing" id="y9t-8w-ECD"/>
+                                    <constraint firstItem="ueR-TI-d2b" firstAttribute="top" secondItem="rLU-2a-7WK" secondAttribute="top" id="r5D-Aj-cFk"/>
                                 </constraints>
                             </stackView>
                         </subviews>
@@ -87,7 +95,8 @@
                     <navigationItem key="navigationItem" id="S2U-pm-yMf"/>
                     <connections>
                         <outlet property="contentTextView" destination="abU-YX-qqV" id="JdR-e9-Vbk"/>
-                        <outlet property="dateSelectBtn" destination="jkq-h3-Cdt" id="xfH-4s-atQ"/>
+                        <outlet property="dateBtn" destination="ueR-TI-d2b" id="bHY-MW-Vva"/>
+                        <outlet property="imageSelectBtn" destination="jkq-h3-Cdt" id="xfH-4s-atQ"/>
                         <outlet property="selectedImage" destination="maI-Al-35P" id="8Pi-W4-nCO"/>
                         <outlet property="titleTextField" destination="CVR-rJ-2R3" id="SIG-K4-9zJ"/>
                     </connections>
@@ -95,6 +104,36 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1042.0289855072465" y="85.714285714285708"/>
+        </scene>
+        <!--Date Picker View Controller-->
+        <scene sceneID="NyZ-qp-xVG">
+            <objects>
+                <viewController storyboardIdentifier="DatePickerViewController" id="PCT-hw-uxm" customClass="DatePickerViewController" customModule="SSAC6WeekProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="4rd-S5-cxe">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="GPu-st-f8k">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </datePicker>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Do8-ic-wA7"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="GPu-st-f8k" firstAttribute="leading" secondItem="Do8-ic-wA7" secondAttribute="leading" id="78e-oR-9xl"/>
+                            <constraint firstItem="GPu-st-f8k" firstAttribute="trailing" secondItem="Do8-ic-wA7" secondAttribute="trailing" id="Ig4-M2-yxu"/>
+                            <constraint firstItem="GPu-st-f8k" firstAttribute="top" secondItem="4rd-S5-cxe" secondAttribute="top" id="fGl-cl-0wV"/>
+                            <constraint firstAttribute="bottom" secondItem="GPu-st-f8k" secondAttribute="bottom" id="lV0-ra-LMO"/>
+                        </constraints>
+                    </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <connections>
+                        <outlet property="datePicker" destination="GPu-st-f8k" id="u8m-So-CeV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eD3-5y-wr8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1830" y="86"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="EuJ-SU-QiA">
@@ -117,6 +156,7 @@
     </scenes>
     <resources>
         <image name="photo.artframe" catalog="system" width="128" height="93"/>
+        <image name="square.and.arrow.up" catalog="system" width="115" height="128"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

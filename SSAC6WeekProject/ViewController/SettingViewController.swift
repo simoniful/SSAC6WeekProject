@@ -7,7 +7,9 @@
 
 import UIKit
 import Zip
-import MobileCoreServices
+// import MobileCoreServices
+import UniformTypeIdentifiers
+
 /*
  백업하기
  1. [To-Do] 사용자의 아이폰 저장 공간이 최소 얼마나 남아있는지 확인 - 부족할 경우: 백업 불가
@@ -81,7 +83,9 @@ class SettingViewController: UIViewController {
         // 6. 4번 배열에 대한 압축 파일 만들기
         do {
             // 독립성을 위해 날짜 등 고유값 활용하여 naming
-            let zipFilePath = try Zip.quickZipFiles(urlPaths, fileName: "archive")
+            let zipFilePath = try Zip.quickZipFiles(urlPaths, fileName: "archive", progress: { progress in
+                print("\(progress)")
+            })
             print("압축경로: \(zipFilePath)")
             presentActivityViewController()
         }
@@ -95,7 +99,8 @@ class SettingViewController: UIViewController {
         // 8-1. 파일앱 열기, 확장자
         // import MobileCoreServices
         // 프로토콜 기반 picker 모두 딜리게이트 유의
-        let documentPicker = UIDocumentPickerViewController(documentTypes: [kUTTypeArchive as String], in: .import)
+        let documentPicker = UIDocumentPickerViewController(forOpeningContentTypes: [UTType.archive], asCopy: true)
+        // let documentPicker = UIDocumentPickerViewController(documentTypes: [kUTTypeArchive as String], in: .import)
         documentPicker.delegate = self
         documentPicker.allowsMultipleSelection = false
         self.present(documentPicker, animated: true, completion: nil)

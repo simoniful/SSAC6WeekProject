@@ -87,11 +87,8 @@ extension SearchViewController: UITableViewDelegate, UITableViewDataSource {
         }
         
         let row = tasks[indexPath.row]
-        
-        cell.diaryTitleLabel.text = row.diaryTitle
-        cell.diaryMainLabel.text = row.diaryContent
-        cell.writingDateLabel.text = "\(row.writeDate)"
-        
+        cell.configureCell(row: row)
+        // extension을 통한 개선 필요
         cell.diaryImage.image = loadImageFromDocuments(imageName: "\(row._id).jpg")
         
         return cell

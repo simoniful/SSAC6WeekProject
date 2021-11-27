@@ -16,8 +16,9 @@ class AddViewController: UIViewController {
 
     @IBOutlet weak var selectedImage: UIImageView!
     @IBOutlet weak var titleTextField: UITextField!
-    @IBOutlet weak var dateSelectBtn: UIButton!
+    @IBOutlet weak var imageSelectBtn: UIButton!
     @IBOutlet weak var contentTextView: UITextView!
+    @IBOutlet weak var dateBtn: UIButton!
     
     // UIMenu와 Button을 이용한 카메라 / 갤러리 접근 enum을 통한 상태 switch case 
     
@@ -38,17 +39,60 @@ class AddViewController: UIViewController {
     @objc func saveData() {
         print("saveData: 일기가 저장되었습니다")
         // 하나의 레코드 생성
-        let task = UserDiary(diaryTitle: titleTextField.text!, diaryContent: contentTextView.text!, writeDate: Date(), regDate: Date())
+        // let format = DateFormatter()
+        // format.dateFormat = "yyyy년 MM월 dd일"
+        
+        // let date = dateBtn.currentTitle!
+        // let value = format.date(from: date)
+        
+        guard let date = dateBtn.currentTitle, let value = DateFormatter.customFormat.date(from: date) else { return }
+        
+        let task = UserDiary(diaryTitle: titleTextField.text!,
+                             diaryContent: contentTextView.text!,
+                             writeDate: value,
+                             regDate: Date())
+        
         try! localRealm.write {
             localRealm.add(task)
             // [To-Do] 이미지가 없더라도 저장이 진행되도록 분기 처리
             if let checkedImage = selectedImage.image {
                 saveImageToDocuments(imageName: "\(task._id).jpg", image: checkedImage)
             }
-            
         }
     }
-    @IBAction func photoBtnClicked(_ sender: UIButton) {
+    
+    // alert 커스터마이징
+    @IBAction func dateBtnClicked(_ sender: UIButton) {
+        let alert = UIAlertController(title: "날짜 선택", message: "날짜를 선택해주세요", preferredStyle: .alert)
+        
+        // 1. 얼럿 안에 들어와서 그런가?
+        // 2. 스토리 보드가 인식이 안되나? - 연관성X, 해당 클래스만 가져온 것
+        // 3. 스토리보드 씬 + 클래스 -> 화면 전환 코드 
+        // let contentView = DatePickerViewController()
+        guard let contentView = self.storyboard?.instantiateViewController(withIdentifier: "DatePickerViewController") as? DatePickerViewController else {
+            print("DatePickerVC에 오류가 있음")
+            return
+        }
+        // contentView.view.backgroundColor = .green
+        // contentView.preferredContentSize = CGSize(width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height)
+        contentView.preferredContentSize.height = 200
+        let ok = UIAlertAction(title: "확인", style: .default) { _ in
+            let format = DateFormatter()
+            format.dateFormat = "yyyy년 MM월 dd일"
+            let value = format.string(from: contentView.datePicker.date)
+            self.dateBtn.setTitle("\(value)", for: .normal)
+            
+        }
+        let cancel = UIAlertAction(title: "취소", style: .cancel, handler:nil)
+        
+        alert.setValue(contentView, forKey: "contentViewController")
+        alert.addAction(ok)
+        alert.addAction(cancel)
+        
+        present(alert, animated: true, completion: nil)
+    }
+    
+    @IBAction func selectImageBtnClicked(_ sender: UIButton) {
         // 1. UIAlertController 생성: 밑바탕 + 타이틀 + 본문
         let alert = UIAlertController(title: nil, message: nil, preferredStyle: .actionSheet)
         
